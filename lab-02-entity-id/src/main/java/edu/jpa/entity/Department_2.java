@@ -1,7 +1,13 @@
 package edu.jpa.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.EmbeddedId;
+
+@Entity
 public class Department_2 {
+    @EmbeddedId
     private DepartmentKey id;
+
     private String description;
 
     public DepartmentKey getId() {

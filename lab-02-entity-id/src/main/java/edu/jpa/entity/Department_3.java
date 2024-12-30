@@ -1,6 +1,14 @@
 package edu.jpa.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.IdClass;
+
+@Entity
+@IdClass(DepartmentKey.class)
 public class Department_3 {
+    @Id
+//    private DepartmentKey departmentKey;
     private String companyName;
     private String departmentName;
     private String description;
