@@ -8,9 +8,11 @@ import jakarta.persistence.IdClass;
 @IdClass(DepartmentKey.class)
 public class Department_3 {
     @Id
-//    private DepartmentKey departmentKey;
     private String companyName;
+
+    @Id
     private String departmentName;
+
     private String description;
 
     public String getCompanyName() {
