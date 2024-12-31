@@ -2,6 +2,8 @@ package edu.jpa.TABLE_PER_CLASS.entity;
 
 import jakarta.persistence.Entity;
 
+// marks class as entity-class
+@Entity
 public class Employee extends Person {
     private double salary;
 
